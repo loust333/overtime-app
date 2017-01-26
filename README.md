@@ -14,3 +14,5 @@
 
 ## UI
 - Bootstrap -> formatting
+
+Learning in https://stackskills.com/courses/professional-rails-code-along
