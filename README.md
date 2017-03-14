@@ -16,3 +16,6 @@ x AdminUser -> STI
 - Bootstrap -> formatting
 
 Learning in https://stackskills.com/courses/professional-rails-code-along
+
+## Refactor TO DO
+- Refactor user association integration test in post_spec
