@@ -1,0 +1,27 @@
+<div class="logo my-2">
+  <h1>Time Tracker</h1>
+</div>
+
+<ul class="nav nav-tabs mb-4">
+  <li class="nav-item">
+    <%= link_to "Home", root_path, class: "nav-link active"%>
+  </li>
+  <li class="nav-item">
+    <%= link_to "Time Entries", posts_path, class: "nav-link"%>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" href="#">Messages</a>
+  </li>
+
+  <li class="nav-item dropdown ml-lg-auto">
+    <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle"
+      role="button" aria-haspopup="true" aria-expanded="false">
+      Account<strong class="caret"></strong>
+    </a>
+    <div class="dropdown-menu">
+      <%= link_to "Edit Details", edit_user_registration_path, class: "dropdown-item"%>
+      <div class="dropdown-divider"></div>
+      <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+    </div>
+  </li>
+</ul>

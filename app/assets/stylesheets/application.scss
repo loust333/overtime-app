@@ -1,0 +1,9 @@
+@import "_bootstrap-variables.scss";
+@import "bootstrap";
+@import "posts.scss";
+
+
+// Doesn't work because bootstrap 4 margin "important!"
+.custom-nav {
+  margin-top: 40px;
+}
