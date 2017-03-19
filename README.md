@@ -13,7 +13,7 @@ x AdminUser -> STI
 - Needs to be documented if employee did not log Overtime
 
 ## UI
-- Bootstrap -> formatting
+x Bootstrap -> formatting
 
 Learning in https://stackskills.com/courses/professional-rails-code-along
 
