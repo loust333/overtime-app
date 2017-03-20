@@ -1,9 +1,9 @@
 # Overtime app - App to learn code like a pro
 
 ## Models
-x Post -> date:date rationale:text
-x User -> Devise
-x AdminUser -> STI
+- x Post -> date:date rationale:text
+- x User -> Devise
+- x AdminUser -> STI
 
 ## Features
 - Approval workflow
@@ -13,7 +13,9 @@ x AdminUser -> STI
 - Needs to be documented if employee did not log Overtime
 
 ## UI
-x Bootstrap -> formatting
+- x Bootstrap -> formatting
+- Icons from Font Awesome
+- Update the styles for forms
 
 Learning in https://stackskills.com/courses/professional-rails-code-along
 
