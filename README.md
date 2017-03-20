@@ -15,7 +15,7 @@
 ## UI
 - x Bootstrap -> formatting
 - Icons from Font Awesome
-- Update the styles for forms
+- x Update the styles for forms
 
 Learning in https://stackskills.com/courses/professional-rails-code-along
 
