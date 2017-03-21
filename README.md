@@ -8,8 +8,8 @@
 ## Features
 - Approval workflow
 - SMS Sending -> link to approval or overtime input
-- Administrate adin dashboard
-- Block non admin users and guest users
+- x Administrate adin dashboard
+- x Block non admin users and guest users
 - Email summary to managers for Approval
 - Needs to be documented if employee did not log Overtime
 
