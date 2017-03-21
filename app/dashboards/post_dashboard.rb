@@ -13,7 +13,7 @@ class PostDashboard < Administrate::BaseDashboard
     date: Field::DateTime,
     rationale: Field::Text,
     created_at: Field::DateTime,
-    updated_at: Field::DateTime,
+    updated_at: Field::DateTime
   }.freeze
 
   # COLLECTION_ATTRIBUTES
@@ -25,7 +25,7 @@ class PostDashboard < Administrate::BaseDashboard
     :user,
     :id,
     :date,
-    :rationale,
+    :rationale
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -36,7 +36,7 @@ class PostDashboard < Administrate::BaseDashboard
     :date,
     :rationale,
     :created_at,
-    :updated_at,
+    :updated_at
   ].freeze
 
   # FORM_ATTRIBUTES
@@ -45,7 +45,7 @@ class PostDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :user,
     :date,
-    :rationale,
+    :rationale
   ].freeze
 
   # Overwrite this method to customize how posts are displayed
