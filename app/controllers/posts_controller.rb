@@ -37,7 +37,6 @@ class PostsController < ApplicationController
   def destroy
     @post.delete
     redirect_to posts_path, notice: 'Your post was deleted successfully'
-
   end
 
   private
@@ -47,6 +46,6 @@ class PostsController < ApplicationController
   end
 
   def post_params
-    params.require(:post).permit(:date, :rationale)
+    params.require(:post).permit(:date, :rationale, :status)
   end
 end
