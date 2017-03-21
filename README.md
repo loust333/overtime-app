@@ -23,3 +23,4 @@ Learning in https://stackskills.com/courses/professional-rails-code-along
 ## Refactor TO DO
 - Refactor user association integration test in post_spec
 - Refactor posts/_form for admin user with status
+- Fix post_spec.rb to use factories line 85
