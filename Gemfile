@@ -5,7 +5,9 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
 
+gem 'administrate', '~> 0.4.0'
 gem 'bootstrap', '~> 4.0.0.alpha6'
+gem 'bourbon'
 gem 'coffee-rails', '~> 4.2'
 gem 'devise'
 gem 'gritter', '1.2.0'
