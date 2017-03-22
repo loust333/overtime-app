@@ -4,6 +4,7 @@
 - x Post -> date:date rationale:text
 - x User -> Devise
 - x AdminUser -> STI
+- AuditLog
 
 ## Features
 - Approval workflow
@@ -15,10 +16,10 @@
 
 ## UI
 - x Bootstrap -> formatting
-- Icons from Font Awesome
+- x Icons from Font Awesome
 - x Update the styles for forms
 
 Learning in https://stackskills.com/courses/professional-rails-code-along
 
 ## Refactor TO DO
-- Refactor posts/_form for admin user with status
+- x Refactor posts/_form for admin user with status
