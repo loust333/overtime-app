@@ -40,7 +40,7 @@ describe 'navigate' do
       other_user =
         User.create(first_name: 'Non', last_name: 'Authorized',
                     email: 'non_authorized_user@test.com', password: 'testtest',
-                    password_confirmation: 'testtest')
+                    password_confirmation: 'testtest', phone: '555555555')
       Post.create(date: Date.today, rationale: 'This post shouldnt be seen',
                   overtime_request: 3.5, user_id: other_user.id)
 
