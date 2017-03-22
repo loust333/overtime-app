@@ -8,7 +8,7 @@
 
 ## Features
 - Approval workflow
-- SMS Sending -> link to approval or overtime input
+- SMS Sending -> link to approval or overtime input -> integrate with heroku scheduler
 - x Administrate adin dashboard
 - x Block non admin users and guest users
 - Email summary to managers for Approval
