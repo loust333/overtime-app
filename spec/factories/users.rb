@@ -1,3 +1,4 @@
+# spec/factories/users.rb
 FactoryGirl.define do
   sequence :email do |n|
     "test#{n}@example.com"
@@ -9,7 +10,7 @@ FactoryGirl.define do
     email { generate :email }
     password 'testtest'
     password_confirmation 'testtest'
-    phone '345678909'
+    phone '3456789092'
   end
 
   factory :admin_user, class: 'AdminUser' do
@@ -18,7 +19,7 @@ FactoryGirl.define do
     email { generate :email }
     password 'testtest'
     password_confirmation 'testtest'
-    phone '345478959'
+    phone '3454789592'
   end
 
   factory :non_authorized_user, class: 'User' do
@@ -27,6 +28,6 @@ FactoryGirl.define do
     email { generate :email }
     password 'testtest'
     password_confirmation 'testtest'
-    phone '34378909'
+    phone '3437890933'
   end
 end

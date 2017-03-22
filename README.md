@@ -21,5 +21,8 @@
 
 Learning in https://stackskills.com/courses/professional-rails-code-along
 
-## Refactor TO DO
-- x Refactor posts/_form for admin user with status
+## TODOS
+- Integrate validation for phone attr in User
+  # No spaces or dashes
+  # exactly 10 characters
+  # all characters have to be a number
