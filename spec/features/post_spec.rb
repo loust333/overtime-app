@@ -5,7 +5,8 @@ describe 'navigate' do
   let(:user) { FactoryGirl.create(:user) }
 
   let(:post) do
-    Post.create(date: Date.today, rationale: 'asdf', user_id: user.id)
+    Post.create(date: Date.today, rationale: 'asdf', user_id: user.id,
+                overtime_request: 3.5)
   end
 
   before do
@@ -41,7 +42,7 @@ describe 'navigate' do
                     email: 'non_authorized_user@test.com', password: 'testtest',
                     password_confirmation: 'testtest')
       Post.create(date: Date.today, rationale: 'This post shouldnt be seen',
-                  user_id: other_user.id)
+                  overtime_request: 3.5, user_id: other_user.id)
 
       expect(page).to_not have_content(/This post shouldnt be seen/)
     end
@@ -63,6 +64,7 @@ describe 'navigate' do
       login_as(delete_user, scope: :user)
 
       post_to_delete = Post.create(date: Date.today, rationale: 'test',
+                                   overtime_request: 3.5,
                                    user_id: delete_user.id)
 
       visit posts_path
