@@ -1,4 +1,6 @@
 # app/controller/static_controller.rb
 class StaticController < ApplicationController
-  def homepage; end
+  def homepage
+    @pending_approvals = Post.where(status: 'submitted')
+  end
 end
