@@ -1,4 +1,5 @@
+# app/mailers/application_mailer.rb
 class ApplicationMailer < ActionMailer::Base
-  default from: 'from@example.com'
+  default from: 'lourenco.steve@outlook.com'
   layout 'mailer'
 end
