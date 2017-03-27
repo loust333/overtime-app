@@ -11,10 +11,10 @@
 - x SMS Sending -> link to approval or overtime input -> integrate with heroku scheduler
 - x Administrate adin dashboard
 - x Block non admin users and guest users
-- Email summary to managers for Approval
+- x Email summary to managers for Approval
 - x Needs to be documented if employee did not log Overtime
 - Create AuditLog for each text message
-
+- Need to update audit log end date when confirmed
 ## UI
 - x Bootstrap -> formatting
 - x Icons from Font Awesome
