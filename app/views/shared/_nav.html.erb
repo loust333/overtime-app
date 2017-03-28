@@ -8,15 +8,9 @@
       <%= link_to "", root_path, class: "nav-link #{active?(root_path)} fa fa-home" %>
     </li>
 
-    <li class="nav-item">
-      <%= link_to "Entries", posts_path, class: "nav-link  #{active?(posts_path)}"%>
-    </li>
+    <%= render 'shared/employee_nav_items' if employee? %>
 
-    <%= render 'shared/audit_log_tab' if policy(AuditLog).index? %>
-
-    <li class="nav-item">
-      <%= link_to "Request Overtime", new_post_path, id: 'new_post_from_nav', class: "nav-link  #{active?(new_post_path)}"%>
-    </li>
+    <%= render 'shared/audit_log_tab' if admin? %>
 
     <li class="nav-item dropdown ml-lg-auto">
       <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle"
@@ -25,12 +19,7 @@
       </a>
       <div class="dropdown-menu">
 
-        <%# TODO:  %>
-        <% if current_user.try(:type) == 'AdminUser' %>
-          <%= link_to "Admin Dashboard", admin_root_path, class: "dropdown-item" %>
-          <div class="dropdown-divider"></div>
-        <% end %>
-        <%# TODO:  %>
+        <%= render 'shared/admin_dropdown' if admin? %>
 
         <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
       </div>

@@ -1,0 +1,4 @@
+<% if current_user.try(:type) == 'AdminUser' %>
+  <%= link_to "Admin Dashboard", admin_root_path, class: "dropdown-item" %>
+  <div class="dropdown-divider"></div>
+<% end %>
