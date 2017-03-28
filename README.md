@@ -22,7 +22,7 @@
 - x Remove unnecessary navbar buttons for managers
 - x Fix admin dashboard bug
 - x Implement HoneyBadger error reporting
-- Implement new relic for keeping site alive
+- x Implement new relic for keeping site alive
 
 ## UI
 - x Bootstrap -> formatting
