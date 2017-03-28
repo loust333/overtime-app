@@ -14,7 +14,7 @@
 - x Email summary to managers for Approval
 - x Needs to be documented if employee did not log Overtime
 - x Create AuditLog for each text message
-- Need to update audit log end date when confirmed
+- x Need to update audit log end date when confirmed
 - Need to update audit log status when an overtime object has been rejected
 - Update button on employee homepage , display mobile
 - Update buttons to include timestamp
