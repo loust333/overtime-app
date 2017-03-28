@@ -21,7 +21,7 @@
 - x Update button sort orden on homepage
 - x Remove unnecessary navbar buttons for managers
 - x Fix admin dashboard bug
-- Implement HoneyBadger error reporting
+- x Implement HoneyBadger error reporting
 - Implement new relic for keeping site alive
 
 ## UI
