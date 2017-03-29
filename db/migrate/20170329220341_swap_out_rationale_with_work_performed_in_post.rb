@@ -1,4 +1,4 @@
-class SwapOutwork_performedWithWorkPerformedInPost < ActiveRecord::Migration[5.0]
+class SwapOutRationaleWithWorkPerformedInPost < ActiveRecord::Migration[5.0]
   def change
     rename_column :posts, :rationale, :work_performed
   end
