@@ -1,7 +1,7 @@
 # Overtime app - App to learn code like a pro
 
 ## Models
-- x Post -> date:date rationale:text
+- x Post -> date:date work_performed:text
 - x User -> Devise
 - x AdminUser -> STI
 - x AuditLog

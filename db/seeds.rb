@@ -24,7 +24,7 @@ AuditLog.create!(user_id: @employee.id, status: 0,
 puts '3 Audit Logs have been created'
 
 100.times do |post|
-  Post.create!(date: Date.today, rationale: "#{post} rationale content",
+  Post.create!(date: Date.today, work_performed: "#{post} work_performed content",
                daily_hours: 12.5, user_id: @employee.id)
 end
 
