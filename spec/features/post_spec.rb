@@ -27,13 +27,14 @@ describe 'navigate' do
     end
 
     it 'has a list of Posts' do
-      post = FactoryGirl.create(:post)
-      post2 = FactoryGirl.create(:second_post)
-      # TODO: Refactor
-      post2.update(user_id: user.id)
-      post.update(user_id: user.id)
+      post
+      second_post = FactoryGirl.create(:second_post)
+      second_post.update(user_id: user.id)
+
       visit posts_path
-      expect(page).to have_content(/work_performed|content/)
+
+      expect(page).to have_text(post.work_performed)
+      expect(page).to have_text(second_post.work_performed)
     end
 
     it 'has a scope so that only posts creators can see their posts' do
@@ -41,7 +42,7 @@ describe 'navigate' do
         User.create(first_name: 'Non', last_name: 'Authorized',
                     email: 'non_authorized_user@test.com', password: 'testtest',
                     password_confirmation: 'testtest', phone: '555555555')
-      Post.create(date: Date.today, work_performed: 'This post shouldnt be seen',
+      Post.create(date: Date.today, work_performed: 'This post shouldt be seen',
                   daily_hours: 3.5, user_id: other_user.id)
 
       expect(page).to_not have_content(/This post shouldnt be seen/)
