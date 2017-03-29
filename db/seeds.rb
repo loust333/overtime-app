@@ -25,7 +25,7 @@ puts '3 Audit Logs have been created'
 
 100.times do |post|
   Post.create!(date: Date.today, rationale: "#{post} rationale content",
-               overtime_request: 2.5, user_id: @employee.id)
+               daily_hours: 12.5, user_id: @employee.id)
 end
 
 puts '100 Posts have been created'
